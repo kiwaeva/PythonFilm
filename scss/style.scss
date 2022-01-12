@@ -1,0 +1,45 @@
+@import 'config';
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.content h1{
+    background-color: $primary-color;
+    font-family: $font-stack;
+    color: $light-color;
+    width: 50%;
+    text-align: center;
+    margin-left: 25%;
+    padding: 2%;
+    margin-bottom: 0%;
+}
+.iframe{
+    display: flex;
+    justify-content: center;
+}
+
+.btn:hover {
+    margin: 10px;
+    background-color: $primary-color;
+    border: none;
+}
+.btn {
+    margin: 10px;
+}
+
+@media only screen and (max-width:600px){
+    .iframe{
+        display: flex; 
+        flex-wrap: wrap; 
+        width: 130%;
+        margin-left: -15%;
+        // height:30%;
+    }
+    .content h1{
+        margin-left: 17.5%;
+        margin-bottom: 0%;
+        width: 65%;
+    }
+}
